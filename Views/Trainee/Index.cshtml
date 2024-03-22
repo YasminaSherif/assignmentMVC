@@ -1,0 +1,28 @@
+﻿@model List<Trainees>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">Id</th>
+            <th scope="col">Name</th>
+            <th scope="col">Address</th>
+            <th scope="col">Level</th>
+            <th scope="col">Department</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var ins in Model)
+        {
+            <tr>
+                <th scope="row">@ins.Id</th>
+                <td>@ins.Name</td>
+                <td>@ins.Address</td>
+                <td>@ins.Level</td>
+                <td>@ins.Department.Name</td>
+
+
+            </tr>
+        }
+    </tbody>
+</table>
+

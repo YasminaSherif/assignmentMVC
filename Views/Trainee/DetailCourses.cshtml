@@ -1,0 +1,25 @@
+﻿@using assignment.ViewModel
+@model List<TraineeWithCourseDegreeAndStatues>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">Id</th>
+            <th scope="col">Name</th>
+            <th scope="col">course</th>
+            <th scope="col">degree</th>
+            <th scope="col">statues</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach(var trainee in Model){
+            <tr>
+                <th scope="row">@trainee.Id</th>
+                <td>@trainee.Name</td>
+                <td>@trainee.CourseName</td>
+            <td>@trainee.degree</td>
+                <td style="color:@trainee.color">@trainee.status</td>
+            </tr>
+        }
+    </tbody>
+</table>

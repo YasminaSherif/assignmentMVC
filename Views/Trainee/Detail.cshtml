@@ -1,0 +1,26 @@
+﻿@using assignment.ViewModel
+@model TraineeWithCourseDegreeAndStatues
+
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">Id</th>
+            <th scope="col">Name</th>
+            <th scope="col">course</th>
+            <th scope="col">degree</th>
+            <th scope="col">statues</th>
+        </tr>
+    </thead>
+    <tbody>
+        
+            <tr>
+            <th scope="row">@Model.Id</th>
+            <td>@Model.Name</td>
+            <td>@Model.CourseName</td>
+            <td>@Model.degree</td>
+            <td style="color:@Model.color">@ViewData["statues"].ToString()</td>
+            </tr>
+        
+    </tbody>
+</table>
+

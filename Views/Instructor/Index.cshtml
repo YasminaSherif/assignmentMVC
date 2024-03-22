@@ -1,0 +1,24 @@
+﻿@model List<Instructors>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">name</th>
+            <th scope="col">salary</th>
+            <th scope="col">department</th>
+            <th scope="col">course</th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach(var ins in Model){
+        <tr>
+            <th scope="row">1</th>
+            <td>@ins.Name</td>
+            <td>@ins.Salary</td>
+           
+
+        </tr>
+}
+    </tbody>
+</table>
+
